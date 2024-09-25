@@ -1,2 +1,2 @@
 # controleVisitante-django
-projeto django de controle de vii
+projeto django de controle de visitante
