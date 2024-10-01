@@ -7,7 +7,7 @@ class UsuarioManager(BaseUserManager):
             email = self.normalize_email(email)
         )
         usuario.is_active = True
-        usuario.is_staff = False
+        usuario.is_staff = False    
         usuario.is_superuser = False
 
         if password:

@@ -9,6 +9,16 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
+#visitantes{
+    color: #093b29;
+}
+
+
+#visitantes_mes{
+ color: #0f6848;
+}
+
 :root {
     --blue: #4e73df;
     --indigo: #6610f2;
