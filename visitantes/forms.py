@@ -9,21 +9,26 @@ class  VisitanteForm(forms.ModelForm):
 
         model = Visitante
         fields =  [
-            'nome_completo', 'cpf', 'data_nascimento', 'numero_casa', 'placa_veiculo']
-        error_messages = [
-            'nome_completo':{
-                'requirid' : 'O nome completo do visitante é obrigatorio para o registro'
-            }
+            'nome_completo', 'cpf', 'telefone', 'data_nascimento', 'numero_casa', 'placa_veiculo'
+            ]
+        error_messages = {
+
+            'nome_completo':{'requirid': 'O nome completo do visitante é obrigatorio para o registro'
+            },
             'cpf':{
                 'requirid' : 'O cpf do visitante é obrigatorio para o registro'
-            }
+            },
             'data_nascimento':{
                 'requirid' : 'Por favor, informe um formato valido para a data de nascimento (DD/MM/AAAA)'
-            }
+            },
             'numero_casa':{
                 'requirid': 'Por favor, informe o número da casa a ser visitada'
-                }
-        ]
+                },
+            'telefone' : {
+                'requirid': 'Por favor, informe o número de telefone'
+
+            }
+        }
 
         
 

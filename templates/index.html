@@ -5,7 +5,7 @@
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800">{{nome_pagina}}</h1>
 
-        <a href="" class="btn btn-primary btn-icon-split btn-sm">
+        <a href="{% url 'registrar_visitante' %}" class="btn btn-primary btn-icon-split btn-sm">
             <span class="text">Registrar Usuarios</span>
             <span class="icon text-white-50">
                 <i class="fas fa-user-plus"></i>
@@ -113,7 +113,7 @@
                             <td>{{visitante.get_horario_autorizacao}}</td>
                             <td>{{visitante.get_morador_responsavel}}</td>
                             <td>
-                                <a href="{#}">
+                                <a href="{% url 'informacoes_visitante' %}">
                                     Ver informações
                                 </a>
                                 {%endfor visitante in todos_visitantes%}
@@ -122,7 +122,7 @@
                     </tbody>
                 </table>
             </div>
-        </div>
+        </div>  
     </div>
 </div>
 
