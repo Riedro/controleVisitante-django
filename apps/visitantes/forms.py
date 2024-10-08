@@ -1,6 +1,6 @@
 from django import forms
 from .models import Visitante
-from typing_extensions import Required
+from typing_extensions import Required # type: ignore
 
 
 class  VisitanteForm(forms.ModelForm):
